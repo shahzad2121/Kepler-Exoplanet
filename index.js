@@ -26,6 +26,7 @@ fs.createReadStream("kepler_data.csv")
   )
   .on("data", (data) => {
     // For each row (planet data), check if the planet is habitable
+    // For each row (planet data), check if the planet is habitable
     if (isHabitaable(data)) {
       habitable.push(data); // If it's habitable, add it to the habitable array
     }
